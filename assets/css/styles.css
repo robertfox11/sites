@@ -1,8 +1,21 @@
-header div img {}
+
 
 
 /* <!-- company logo navigation menu--> */
 
 .headimg {
     margin: 0 190px;
+    margin-top: 20px;
+}
+
+
+/* img personal */
+
+.bg-personal {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    background: red;
 }
