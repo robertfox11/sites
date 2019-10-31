@@ -12,3 +12,19 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.bg-about {
+    background-color: rgba(191, 106, 74, 0.5);
+}
+
+.bg-main-h1 {
+    position: absolute;
+    top: 55%;
+    left: 0;
+    width: 100%;
+    color: #c17152;
+    font-size: 3em;
+    font-weight: bold;
+    vertical-align: inherit;
+    text-align: center;
+}
