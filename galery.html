@@ -11,7 +11,7 @@
     <title>Sites</title>
 </head>
 
-<body class="d-flex flex-column ">
+<body class="d-flex flex-column bg-light">
     <header class="d-flex flex-grow-0">
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-light">
@@ -31,7 +31,7 @@
                     </li>
                     <li class="nav-item mx-2 ">
                         <div class="dropdown">
-                            <a onmouseover="DropDown()" class="nav-link btn btn-primary" href="services.html">Services</a>
+                            <a onmouseover="DropDown()" class="nav-link btn btn_main" href="services.html">Services</a>
                             <div id="myDropdown" class="dropdown-content">
                                 <a class="dropdown-item" href="CheckLunch.html">Check Lunch</a>
                                 <a class="dropdown-item" href="Cadhoc.html">CadHoc</a>
@@ -54,8 +54,8 @@
         </nav>
     </header>
     <main class="container-fluid flex-grow-1">
-        <div class="row my-3">
-            <div class="card col-md-4">
+        <div class="card-deck my-3">
+            <div class="card ">
                 <img src="assets/img/services/cheque-dej.jpg" class="card-img-top modal-hover-opacity" alt="responsive-img" onclick="modal(this)">
 
                 <div class="card-body">
@@ -64,7 +64,7 @@
 
                 </div>
             </div>
-            <div class="card  col-md-4">
+            <div class="card ">
                 <img src="assets/img/services/cheque-do.jpg" class="card-img-top modal-hover-opacity" alt="responsive-img" onclick="modal(this)">
                 <div class="card-body   ">
                     <h5 class="card-title">Cadhoc</h5>
@@ -72,7 +72,7 @@
 
                 </div>
             </div>
-            <div class="card  col-md-4">
+            <div class="card">
                 <img src="assets/img/services/cadeau.jpg" class="card-img-top modal-hover-opacity" alt="responsive-img" onclick="modal(this)">
                 <div class="card-body   ">
                     <h5 class="card-title">Cadhoc</h5>

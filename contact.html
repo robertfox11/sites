@@ -11,8 +11,8 @@
     <title>Sites</title>
 </head>
 
-<body>
-    <header>
+<body class="d-flex flex-column bg-light">
+    <header class="d-flex flex-grow-0">
 
         <!-- company logo navigation menu-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-light">
@@ -32,7 +32,7 @@
                     </li>
                     <li class="nav-item mx-2 ">
                         <div class="dropdown">
-                            <a onmouseover="DropDown()" class="nav-link btn btn-primary" href="services.html">Services</a>
+                            <a onmouseover="DropDown()" class="nav-link btn btn_main" href="services.html">Services</a>
                             <div id="myDropdown" class="dropdown-content">
                                 <a class="dropdown-item" href="CheckLunch.html">Check Lunch</a>
                                 <a class="dropdown-item" href="Cadhoc.html">CadHoc</a>
@@ -54,7 +54,48 @@
             </div>
         </nav>
     </header>
-    <footer class="flex-grow-0 py-0 bg-dark ">
+    <main class="flex-grow-1 ">
+        <div class="container bg-white">
+            <form class="">
+                <h2 class="text-center">Contact us</h2>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2">Select your check</label>
+                    <select class="custom-select custom-select-lg mb-3">
+                            <option selected>Open this select menu Check</option>
+                            <option value="1">Check Lunch</option>
+                            <option value="2">Cadhoc</option>
+                            <option value="3">House Check</option>
+                          </select>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="exampleFormControlInput1">First Name:</label>
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col">
+                        <label for="exampleFormControlInput1">Last Name:</label>
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="col">
+                        <label for="exampleFormControlInput1">Phone:</label>
+                        <input type="number" class="form-control" placeholder="Phone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comment</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn_main">Enviar</button>
+            </form>
+        </div>
+
+    </main>
+    <footer class="flex-grow-0 bg-dark ">
         <div class="d-flex bg-dark mx-2 ">
             <div class="mr-auto">
                 <img class="d-flex justify-content-start my-2 " width="100 " height="40 " src="assets/img/logo/AssemblerS.png " alt="Responsive image ">
