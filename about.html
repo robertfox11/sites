@@ -11,8 +11,8 @@
     <title>Sites</title>
 </head>
 
-<body>
-    <header>
+<body class="d-flex flex-column ">
+    <header class="d-flex flex-grow-0">
         <!-- <div id="login">
             <h4><span>Identificate</span></h4>
             <form id="form">
@@ -26,7 +26,7 @@
         <!-- company logo navigation menu-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-light">
             <a class="navbar-brand " href="index.html">
-                <img class="d-inline-flex mx-5 mb-2 " width="150" height="40" src="assets/img/assembler.png" alt="">
+                <img class="d-inline-flex mx-5 mb-2 " width="150" height="40" src="assets/img/logo/assembler.png" alt="">
             </a>
             <button class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -58,11 +58,11 @@
             </div>
         </nav>
     </header>
-    <main class="container bg-about">
+    <main class="container bg-light flex-grow-1">
         <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img/person.png" class="d-block w-100 " height="550" alt="">
+                    <img src="assets/img/about/person.png" class="d-block w-100 " height="550" alt="Responsive image">
                 </div>
                 <div>
                     <h1 class="bg-main-h1 ">
@@ -70,54 +70,68 @@
                     </h1>
                 </div>
             </div>
-            <section class="bg-light text-dark py-5">
-                <h2 class="text-center mb-5">First Innovacion</h2>
-                <div class="d-flex flex-row justify-content text-justify mx-2">
+        </div>
+        <section>
+            <h3 class="text-center my-5">Estas soluciones de gestión, comunicación e intercambio mejoran el poder adquisitivo y la convivencia.</h3>
+            <div class="container mt-3">
+                <div class="row mb-5">
+                    <div class="d-flex col-md-4  col-xs-3 my-1  ">
+                        <div class="d-inline-block text-center w-100 ">
+                            <div class="card-header bg-info mb-1 ">Quienes Somos</div>
+                            <img class="rounded w-100" height="230px" src="assets/img/about/about.png">
 
-                        <div class="container">
-                                <div class="row">
-                                    <div class="col-sym ">
-                                        <img class="d-inline-flex mx-auto mb-2 " width="300" height="150" src="assets/img/about.png" alt="Responsive image">
-                                        <h3>Start</h3>
-                                        <p>Grupo cooperativo, presente en 4 continentes y operando en casi 30 países, nos desarrollamos gracias a la energía de 3,500 mujeres y hombres que invierten cada día en nuestro crecimiento. Nuestro modelo, fuente de independencia, garantiza relaciones equilibradas y confianza con los beneficiarios, empleadores, comerciantes, autoridades públicas ...</p>
-                                    </div>
-                                    <div class="col-sm bg-light">
-                                        <img class="d-inline-flex mx-auto mb-2 " width="300" height="150" src="assets/img/Dowedo.png" alt="Responsive image">
-                                        <h3>Do not give up</h3>
-                                        <p>soluciones de gestión que mejoran la vitalidad de las empresas y los territorios, así como el poder adquisitivo y el sustento de los empleados y ciudadanos, al tiempo que ofrecen libertad de elección y uso. .</p>
-                                    </div>
-                                    <div class="col-sm bg-light">
-                                        <img class="d-inline-flex mx-auto mb-2 " width="300" height="150" src="assets/img/ambitions.png" alt="Responsive image">
-                                        <h2>Constancy</h2>
-                                        <p> Nuestras soluciones contribuyen al surgimiento de una sociedad más justa, al involucrar a individuos y ciudadanos en un proyecto colectivo en torno a aspiraciones profundas y problemas sociales que nos unen.</p>
-                                    </div>
-                                </div>
-                            </div>
-        
-                </div>
-            </section>
-            
-    </main>
-    <footer class="bg-dark">
-            <div class="d-flex bg-dark mx-2">
-                <div class="mr-auto p-2">
-                    <img class="d-flex justify-content-start my-2 " width="100 " height="40 " src="assets/img/AssemblerS.png " alt="Responsive image ">
-                </div>
-                <div class="p-2 my-2 mx-2"><a href="https://twitter.com/"><svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 273.5 222.3 " height="18 "><path d="M273.5 26.3a109.77 109.77 0 0 1-32.2 8.8 56.07 56.07 0 0 0 24.7-31 113.39 113.39 0 0 1-35.7 13.6 56.1 56.1 0
-                        0 0-97 38.4 54 54 0 0 0 1.5 12.8A159.68 159.68 0 0 1 19.1 10.3a56.12 56.12 0 0 0 17.4 74.9 56.06 56.06 0 0 1-25.4-7v.7a56.11 56.11 0 0 0 45 55 55.65 55.65 0 0 1-14.8 2 62.39 62.39 0 0 1-10.6-1 56.24 56.24 0 0 0 52.4 39 112.87 112.87 0
-                        0 1-69.7 24 119 119 0 0 1-13.4-.8 158.83 158.83 0 0 0 86 25.2c103.2 0 159.6-85.5 159.6-159.6 0-2.4-.1-4.9-.2-7.3a114.25 114.25 0 0 0 28.1-29.1 " fill="currentColor "></path></svg></a>
-                </div>
-                <div class="p-2 my-2 mx-2"><a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 15.3 15.4 " height="18 "><path d="M14.5 0H.8a.88.88 0 0 0-.8.9v13.6a.88.88 0 0 0 .8.9h7.3v-6h-2V7.1h2V5.4a2.87 2.87 0 0 1 2.5-3.1h.5a10.87 10.87
-                        0 0 1 1.8.1v2.1h-1.3c-1 0-1.1.5-1.1 1.1v1.5h2.3l-.3 2.3h-2v5.9h3.9a.88.88 0 0 0 .9-.8V.8a.86.86 0 0 0-.8-.8z " fill="currentColor "></path></svg></a>
-                </div>
-    
-                <div class="p-2 my-2 mx-2"><a href="https://www.youtube.com/"><svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 19.17 13.6 " height="16 "><path d="M18.77 2.13A2.4 2.4 0 0 0 17.09.42C15.59 0 9.58 0 9.58 0a57.55 57.55 0 0 0-7.5.4A2.49 2.49 0 0 0 .39 2.13 26.27
-                        26.27 0 0 0 0 6.8a26.15 26.15 0 0 0 .39 4.67 2.43 2.43 0 0 0 1.69 1.71c1.52.42 7.5.42 7.5.42a57.69 57.69 0 0 0 7.51-.4 2.4 2.4 0 0 0 1.68-1.71 25.63 25.63 0 0 0 .4-4.67 24 24 0 0 0-.4-4.69zM7.67 9.71V3.89l5 2.91z " fill="currentColor "></path></svg></a>
-                </div>
-                <div class="p-2 my-2 mx-2"><a href="https://www.linkedin.com/feed/"><svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 19 18 " height="18 "><path d="M3.94 2A2 2 0 1 1 2 0a2 2 0 0 1 1.94 2zM4 5.48H0V18h4zm6.32 0H6.34V18h3.94v-6.57c0-3.66 4.77-4 4.77 0V18H19v-7.93c0-6.17-7.06-5.94-8.72-2.91z
-                        " fill="currentColor "></path></svg></a>
+                            <p class=" text-justify">Grupo cooperativo, presente en 4 continentes y operando en casi 30 países, nos desarrollamos gracias a la energía de 3,500 mujeres y hombres que invierten cada día en nuestro crecimiento. Nuestro modelo, fuente de independencia,
+                                garantiza relaciones equilibradas confianza con empleadores, comerciantes como autoridades públicas ...</p>
+                        </div>
+                    </div>
+                    <div class="d-flex col-md-4  col-xs-3 my-1  ">
+                        <div class="d-inline-block  text-center w-100 ">
+                            <div class="card-header bg-info mb-1">Que hacemos </div>
+                            <img class="rounded w-100" height="230px" src="assets/img/about/Dowedo.png">
+
+                            <p class="text-justify ">Soluciones de gestión que mejoran la vitalidad de las empresas y los territorios, así como el poder adquisitivo y el sustento de los empleados y ciudadanos, al tiempo que ofrecen libertad de elección y uso</p>
+                        </div>
+                    </div>
+                    <div class="d-flex col-md-4  col-xs-3 my-1 ">
+                        <div class="d-inline-block text-center ">
+                            <div class="card-header bg-info mb-1">Ambiciones</div>
+                            <img class="rounded w-100" height="230px" src="assets/img/about/ambitions.png">
+
+                            <p class="text-justify ">Nuestras soluciones contribuyen al surgimiento de una sociedad más justa, al involucrar a individuos y ciudadanos en un proyecto colectivo en torno a aspiraciones profundas y problemas sociales que nos unen.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>
-    </body>
-</html>
+            <div class="embed-responsive embed-responsive-16by9 my-2">
+                <iframe src="https://www.youtube.com/embed/D6vGQwWzcs4" class="embed-responsive-item " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="flex-grow-0 py-0 bg-dark ">
+        <div class="d-flex bg-dark mx-2 ">
+            <div class="mr-auto">
+                <img class="d-flex justify-content-start my-2 " width="100 " height="40 " src="assets/img/logo/AssemblerS.png " alt="Responsive image ">
+            </div>
+            <div class="p-2 my-2 mx-2"><a href="https://twitter.com/"><svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 273.5 222.3 " height="18 "><path d="M273.5 26.3a109.77 109.77 0 0 1-32.2 8.8 56.07 56.07 0 0 0 24.7-31 113.39 113.39 0 0 1-35.7 13.6 56.1 56.1 0
+                    0 0-97 38.4 54 54 0 0 0 1.5 12.8A159.68 159.68 0 0 1 19.1 10.3a56.12 56.12 0 0 0 17.4 74.9 56.06 56.06 0 0 1-25.4-7v.7a56.11 56.11 0 0 0 45 55 55.65 55.65 0 0 1-14.8 2 62.39 62.39 0 0 1-10.6-1 56.24 56.24 0 0 0 52.4 39 112.87 112.87 0
+                    0 1-69.7 24 119 119 0 0 1-13.4-.8 158.83 158.83 0 0 0 86 25.2c103.2 0 159.6-85.5 159.6-159.6 0-2.4-.1-4.9-.2-7.3a114.25 114.25 0 0 0 28.1-29.1 " fill="currentColor "></path></svg></a>
+            </div>
+            <div class="p-2 my-2 mx-2"><a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 15.3 15.4 " height="18 "><path d="M14.5 0H.8a.88.88 0 0 0-.8.9v13.6a.88.88 0 0 0 .8.9h7.3v-6h-2V7.1h2V5.4a2.87 2.87 0 0 1 2.5-3.1h.5a10.87 10.87
+                    0 0 1 1.8.1v2.1h-1.3c-1 0-1.1.5-1.1 1.1v1.5h2.3l-.3 2.3h-2v5.9h3.9a.88.88 0 0 0 .9-.8V.8a.86.86 0 0 0-.8-.8z " fill="currentColor "></path></svg></a>
+            </div>
+
+            <div class="p-2 my-2 mx-2"><a href="https://www.youtube.com/"><svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 19.17 13.6 " height="16 "><path d="M18.77 2.13A2.4 2.4 0 0 0 17.09.42C15.59 0 9.58 0 9.58 0a57.55 57.55 0 0 0-7.5.4A2.49 2.49 0 0 0 .39 2.13 26.27
+                    26.27 0 0 0 0 6.8a26.15 26.15 0 0 0 .39 4.67 2.43 2.43 0 0 0 1.69 1.71c1.52.42 7.5.42 7.5.42a57.69 57.69 0 0 0 7.51-.4 2.4 2.4 0 0 0 1.68-1.71 25.63 25.63 0 0 0 .4-4.67 24 24 0 0 0-.4-4.69zM7.67 9.71V3.89l5 2.91z " fill="currentColor "></path></svg></a>
+            </div>
+            <div class="p-2 my-2 mx-2"><a href="https://www.linkedin.com/feed/"><svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 19 18 " height="18 "><path d="M3.94 2A2 2 0 1 1 2 0a2 2 0 0 1 1.94 2zM4 5.48H0V18h4zm6.32 0H6.34V18h3.94v-6.57c0-3.66 4.77-4 4.77 0V18H19v-7.93c0-6.17-7.06-5.94-8.72-2.91z
+                    " fill="currentColor "></path></svg></a>
+            </div>
+        </div>
+
+    </footer>
+    <script type="text/javascript" src="js/slides.js"></script>
+</body>
+
+</div>

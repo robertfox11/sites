@@ -28,3 +28,27 @@
     vertical-align: inherit;
     text-align: center;
 }
+
+.bg-section-size {
+    font-size: 20px;
+}
+
+
+/* slide move */
+
+.fades {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.text-caption {
+    color: #f7f2f2;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
