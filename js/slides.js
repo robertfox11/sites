@@ -41,7 +41,7 @@ function DropDown() {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-        if (!event.target.matches('.nav-link')) {
+        if (!event.target.matches('nav-link')) {
             var dropdowns = document.getElementsByClassName("dropdown-content");
             var i;
             for (i = 0; i < dropdowns.length; i++) {
@@ -53,19 +53,39 @@ window.onclick = function(event) {
         }
     }
     //validation Form
+function validar() {
+    var nombre, apellidos, dni, email, telefono, contraseña;
+    nombre = document.getElementById('nombre').value;
+    apellidos = document.getElementById('apellidos').value;
+    email = document.getElementById('email').value;
+    contraseña = document.getElementById('contraseña').value;
 
-window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-        }, false);
-    });
-}, false);
-document.getElementsByClassName('card-img-top');
+    expresionRegular = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+    if (nombre == "" || apellidos == "" || email == "" || contraseña == "" || telefono == "" || dni == "") {
+        alert("Todos los campos tiene que estar rellenado ");
+        return false;
+    } else if (nombre.length > 30) {
+        alert("nombre es muy largo");
+        return false;
+    } else if (apellidos.length > 80) {
+        alert("apellidos es muy largo");
+        return false;
+
+    } else if (email.length > 100) {
+        alert("el correo es muy largo");
+        return false;
+
+    } else if (!expresionRegular.test(email) == true) {
+        alert("el email no es valido");
+
+    } else if (telefono.length >= 9) {
+        alert("teléfono es muy largo");
+        return false;
+    } else if (isNaN(telefono)) {
+        alert("	El teléfono ingresado no es un número");
+    } else if (usuario.length > 20 || contraseña.length > 20 || repetircontraseña.length > 20) {
+        alert("El usuario y la contraseña solo deben tener 20 carateres");
+        return false;
+    }
+}

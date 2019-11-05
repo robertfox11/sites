@@ -54,58 +54,38 @@
             </div>
         </nav>
     </header>
+
     <section class="container flex-grow-1">
         <h2>Registro Formulario</h2>
-        <form class="needs-validation">
+        <form class="needs-validation" method="post" onsubmit="return validar()">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label class="" for="name">Nombre </label>
-                    <input type="text" class="form-control" placeholder="First name" required>
+                    <input id="nombre" type="text" class="form-control" placeholder="First name" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label class="" for="lastname">Apellidos </label>
-                    <input type="text" class="form-control" placeholder="Last name" required>
+                    <input id="apellidos" type="text" class="form-control" placeholder="Last name" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="" for="name">Dni </label>
+                    <input id="dni" type="text" class="form-control" placeholder="dni" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="" for="lastname">Telefono </label>
+                    <input id="telefono" type="number" class="form-control" placeholder="phone" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                    <input id="email" type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
-
-
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity" required>
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                      <option selected>Choose...</option>
-                      <option>...</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Check me out
-                    </label>
+                    <input id="contraseña" type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
                 </div>
             </div>
             <button type="submit" class="btn btn_main">Sign in</button>
@@ -132,7 +112,6 @@
                         4.77-4 4.77 0V18H19v-7.93c0-6.17-7.06-5.94-8.72-2.91z " fill="currentColor "></path></svg></a>
             </div>
         </div>
-
     </footer>
     <script type="text/javascript " src="js/slides.js "></script>
 </body>
